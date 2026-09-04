@@ -301,8 +301,8 @@ body::before {
     <p class="intro-sub">16가지 상황에 솔직하게 답하면<br>나만의 디지털 안전 유형 카드를 확인할 수 있어요</p>
     <div class="intro-stats">
       <div class="intro-stat"><b>16</b>문항</div>
-      <div class="intro-stat"><b>4</b>가지 축</div>
-      <div class="intro-stat"><b>16</b>가지 유형</div>
+      <div class="intro-stat"><b>4</b>가지 분야</div>
+      <div class="intro-stat"><b>16</b>유형</div>
     </div>
     <button class="btn-start" onclick="startTest()">테스트 시작하기 →</button>
     <p class="intro-note">약 2분 소요 · 결과 저장·공유 가능</p>
@@ -528,7 +528,7 @@ function renderQuestion() {
   document.getElementById('q-pct').textContent = pct + '%';
   document.getElementById('q-fill').style.width = pct + '%';
   document.getElementById('q-num').textContent = `Q${currentQ + 1}`;
-  document.getElementById('q-axis-tag').textContent = axisLabel[q.axis] + ' 축';
+  document.getElementById('q-axis-tag').textContent = axisLabel[q.axis];
   document.getElementById('q-text').textContent = q.text;
 
   const opts = document.getElementById('q-options');
